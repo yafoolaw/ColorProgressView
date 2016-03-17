@@ -10,6 +10,7 @@ import UIKit
 
 class ColorProgressView: UIView {
 
+    // MARK: -外部变量
     var m_progress : Float? {
     
         willSet {
@@ -30,6 +31,8 @@ class ColorProgressView: UIView {
     }
     var m_color    : ProgressColor?
     
+    
+    // MARK: -内部变量
     private
     var m_width         : CGFloat?
     
@@ -42,14 +45,23 @@ class ColorProgressView: UIView {
     private
     var m_gradientLayer : CAGradientLayer?
     
+    private
+    let m_timer = GCDTimer(inQueue: GCDQueue.mainQueue())
     
-    func startAnimation() {
+    // 开始进度
+    func startProgress() {
     
         self.m_gradientLayer?.colors     = self.m_color?.m_colors
         self.m_gradientLayer?.startPoint = (self.m_color?.m_startPoint)!
         self.m_gradientLayer?.endPoint   = (self.m_color?.m_endPoint)!
         
-        self.doAnimation()
+        self.m_timer.event({ () -> Void in
+            
+            self.doProgress()
+            
+            }, timeIntervalWithSecs: Float((self.m_color?.m_duration)!))
+        
+        self.m_timer.start()
     }
     
     override init(frame: CGRect) {
@@ -82,30 +94,12 @@ class ColorProgressView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func doAnimation() {
+    // 颜色移动
+    func doProgress() {
+
+        self.m_color?.m_colors   = self.m_color?.loopMove()
     
-        let fromColors = self.m_color?.m_colors
-        let toColors   = self.m_color?.loopMove()
-        
-        self.m_color?.m_colors = toColors
-        
-        let animation : CABasicAnimation = CABasicAnimation(keyPath: "m_colors")
-        
-        animation.fromValue           = fromColors
-        animation.toValue             = toColors
-        animation.duration            = (self.m_color?.m_duration)!
-        animation.removedOnCompletion = true
-        animation.fillMode            = kCAFillModeForwards
-        animation.timingFunction      = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        animation.delegate            = self
-        
-        self.m_gradientLayer?.colors = toColors
-        self.m_gradientLayer?.addAnimation(animation, forKey: nil)
-    }
-    
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        
-        self.doAnimation()
+        self.m_gradientLayer?.colors = self.m_color?.m_colors
     }
 
 }

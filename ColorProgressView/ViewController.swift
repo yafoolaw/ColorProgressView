@@ -12,7 +12,7 @@ let ScreenWidth = UIScreen.mainScreen().bounds.size.width
 
 class ViewController: UIViewController {
     
-    var m_timer   : GCDTimer?
+    let m_timer = GCDTimer(inQueue: GCDQueue.mainQueue())
     var m_counter : Int = 0
 
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         redProgressView.m_color = ProgressColor.redGradientColor()
         redProgressView.center  = self.view.middlePoint
         redProgressView.y      -= 20
-        redProgressView.startAnimation()
+        redProgressView.startProgress()
         self.view.addSubview(redProgressView)
         
         // 彩色进度条
@@ -35,14 +35,11 @@ class ViewController: UIViewController {
         
         colorProgressView.center = self.view.middlePoint
         colorProgressView.y     += 20
-        colorProgressView.startAnimation()
+        colorProgressView.startProgress()
         self.view.addSubview(colorProgressView)
         
-        // 定时器
-        self.m_timer = GCDTimer(inQueue: GCDQueue.mainQueue())
-        
         // 关于闭包内,内存管理的问题,参见http://swifter.tips/retain-cycle/
-        self.m_timer!.event({ () -> Void in
+        self.m_timer.event({ () -> Void in
             
             UIView.animateWithDuration(0.5, delay: 0,
                            usingSpringWithDamping: 2,
@@ -66,7 +63,7 @@ class ViewController: UIViewController {
             
             }, timeIntervalWithSecs: 1.0, delaySecs: 1.0)
         
-        self.m_timer!.start()
+        self.m_timer.start()
     }
 }
 
