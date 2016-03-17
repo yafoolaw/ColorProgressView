@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B538AEDF1C97BBB200893673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AEDE1C97BBB200893673 /* AppDelegate.swift */; };
+		B538AEE11C97BBB200893673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AEE01C97BBB200893673 /* ViewController.swift */; };
+		B538AEE41C97BBB200893673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B538AEE21C97BBB200893673 /* Main.storyboard */; };
+		B538AEE61C97BBB200893673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B538AEE51C97BBB200893673 /* Assets.xcassets */; };
+		B538AEE91C97BBB200893673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B538AEE71C97BBB200893673 /* LaunchScreen.storyboard */; };
+		B538AEF11C97BF2400893673 /* ProgressColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AEF01C97BF2400893673 /* ProgressColor.swift */; };
+		B538AEF31C97EFBC00893673 /* ColorProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538AEF21C97EFBC00893673 /* ColorProgressView.swift */; };
+		B538AF041C99591E00893673 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AEFD1C99591E00893673 /* GCDGroup.m */; };
+		B538AF051C99591E00893673 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AEFF1C99591E00893673 /* GCDQueue.m */; };
+		B538AF061C99591E00893673 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AF011C99591E00893673 /* GCDSemaphore.m */; };
+		B538AF071C99591E00893673 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AF031C99591E00893673 /* GCDTimer.m */; };
+		B538AF0D1C995FE900893673 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AF0A1C995FE900893673 /* UIView+SetRect.m */; };
+		B538AF0E1C995FE900893673 /* CALayer+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = B538AF0C1C995FE900893673 /* CALayer+SetRect.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B538AEDB1C97BBB200893673 /* ColorProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B538AEDE1C97BBB200893673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B538AEE01C97BBB200893673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B538AEE31C97BBB200893673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B538AEE51C97BBB200893673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B538AEE81C97BBB200893673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B538AEEA1C97BBB200893673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B538AEF01C97BF2400893673 /* ProgressColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressColor.swift; sourceTree = "<group>"; };
+		B538AEF21C97EFBC00893673 /* ColorProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorProgressView.swift; sourceTree = "<group>"; };
+		B538AEFA1C99591E00893673 /* ColorProgressView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorProgressView-Bridging-Header.h"; sourceTree = "<group>"; };
+		B538AEFB1C99591E00893673 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		B538AEFC1C99591E00893673 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		B538AEFD1C99591E00893673 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		B538AEFE1C99591E00893673 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		B538AEFF1C99591E00893673 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		B538AF001C99591E00893673 /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		B538AF011C99591E00893673 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		B538AF021C99591E00893673 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		B538AF031C99591E00893673 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		B538AF091C995FE900893673 /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		B538AF0A1C995FE900893673 /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		B538AF0B1C995FE900893673 /* CALayer+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SetRect.h"; sourceTree = "<group>"; };
+		B538AF0C1C995FE900893673 /* CALayer+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SetRect.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B538AED81C97BBB200893673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B538AED21C97BBB200893673 = {
+			isa = PBXGroup;
+			children = (
+				B538AEDD1C97BBB200893673 /* ColorProgressView */,
+				B538AEDC1C97BBB200893673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B538AEDC1C97BBB200893673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B538AEDB1C97BBB200893673 /* ColorProgressView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B538AEDD1C97BBB200893673 /* ColorProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B538AEDE1C97BBB200893673 /* AppDelegate.swift */,
+				B538AEE01C97BBB200893673 /* ViewController.swift */,
+				B538AEF21C97EFBC00893673 /* ColorProgressView.swift */,
+				B538AEF01C97BF2400893673 /* ProgressColor.swift */,
+				B538AF0F1C995FEE00893673 /* SetRect */,
+				B538AF081C99592200893673 /* GCD */,
+				B538AEE21C97BBB200893673 /* Main.storyboard */,
+				B538AEE51C97BBB200893673 /* Assets.xcassets */,
+				B538AEE71C97BBB200893673 /* LaunchScreen.storyboard */,
+				B538AEEA1C97BBB200893673 /* Info.plist */,
+				B538AEFA1C99591E00893673 /* ColorProgressView-Bridging-Header.h */,
+			);
+			path = ColorProgressView;
+			sourceTree = "<group>";
+		};
+		B538AF081C99592200893673 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				B538AEFB1C99591E00893673 /* GCD.h */,
+				B538AEFC1C99591E00893673 /* GCDGroup.h */,
+				B538AEFD1C99591E00893673 /* GCDGroup.m */,
+				B538AEFE1C99591E00893673 /* GCDQueue.h */,
+				B538AEFF1C99591E00893673 /* GCDQueue.m */,
+				B538AF001C99591E00893673 /* GCDSemaphore.h */,
+				B538AF011C99591E00893673 /* GCDSemaphore.m */,
+				B538AF021C99591E00893673 /* GCDTimer.h */,
+				B538AF031C99591E00893673 /* GCDTimer.m */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
+		B538AF0F1C995FEE00893673 /* SetRect */ = {
+			isa = PBXGroup;
+			children = (
+				B538AF091C995FE900893673 /* UIView+SetRect.h */,
+				B538AF0A1C995FE900893673 /* UIView+SetRect.m */,
+				B538AF0B1C995FE900893673 /* CALayer+SetRect.h */,
+				B538AF0C1C995FE900893673 /* CALayer+SetRect.m */,
+			);
+			name = SetRect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B538AEDA1C97BBB200893673 /* ColorProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B538AEED1C97BBB200893673 /* Build configuration list for PBXNativeTarget "ColorProgressView" */;
+			buildPhases = (
+				B538AED71C97BBB200893673 /* Sources */,
+				B538AED81C97BBB200893673 /* Frameworks */,
+				B538AED91C97BBB200893673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorProgressView;
+			productName = ColorProgressView;
+			productReference = B538AEDB1C97BBB200893673 /* ColorProgressView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B538AED31C97BBB200893673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = FrankLiu;
+				TargetAttributes = {
+					B538AEDA1C97BBB200893673 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = B538AED61C97BBB200893673 /* Build configuration list for PBXProject "ColorProgressView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B538AED21C97BBB200893673;
+			productRefGroup = B538AEDC1C97BBB200893673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B538AEDA1C97BBB200893673 /* ColorProgressView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B538AED91C97BBB200893673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B538AEE91C97BBB200893673 /* LaunchScreen.storyboard in Resources */,
+				B538AEE61C97BBB200893673 /* Assets.xcassets in Resources */,
+				B538AEE41C97BBB200893673 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B538AED71C97BBB200893673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B538AF061C99591E00893673 /* GCDSemaphore.m in Sources */,
+				B538AEF11C97BF2400893673 /* ProgressColor.swift in Sources */,
+				B538AEF31C97EFBC00893673 /* ColorProgressView.swift in Sources */,
+				B538AEE11C97BBB200893673 /* ViewController.swift in Sources */,
+				B538AF071C99591E00893673 /* GCDTimer.m in Sources */,
+				B538AEDF1C97BBB200893673 /* AppDelegate.swift in Sources */,
+				B538AF051C99591E00893673 /* GCDQueue.m in Sources */,
+				B538AF0D1C995FE900893673 /* UIView+SetRect.m in Sources */,
+				B538AF0E1C995FE900893673 /* CALayer+SetRect.m in Sources */,
+				B538AF041C99591E00893673 /* GCDGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B538AEE21C97BBB200893673 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B538AEE31C97BBB200893673 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B538AEE71C97BBB200893673 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B538AEE81C97BBB200893673 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B538AEEB1C97BBB200893673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B538AEEC1C97BBB200893673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B538AEEE1C97BBB200893673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ColorProgressView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrankLiu.ColorProgressView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorProgressView/ColorProgressView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B538AEEF1C97BBB200893673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ColorProgressView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FrankLiu.ColorProgressView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorProgressView/ColorProgressView-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B538AED61C97BBB200893673 /* Build configuration list for PBXProject "ColorProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B538AEEB1C97BBB200893673 /* Debug */,
+				B538AEEC1C97BBB200893673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B538AEED1C97BBB200893673 /* Build configuration list for PBXNativeTarget "ColorProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B538AEEE1C97BBB200893673 /* Debug */,
+				B538AEEF1C97BBB200893673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B538AED31C97BBB200893673 /* Project object */;
+}
