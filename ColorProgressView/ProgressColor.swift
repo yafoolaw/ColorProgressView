@@ -48,6 +48,7 @@ class ProgressColor: NSObject {
 
 extension ProgressColor {
 
+    // 提供一种生成红色过渡的ProgressColor
     class func redGradientColor() -> ProgressColor {
     
         let progressColor = ProgressColor()
